@@ -6,29 +6,95 @@
 .Rproj.user/
 *.Rproj
 
+# R session data
+.RData
+.Rhistory
+
+# RStudio project files
+*.Rproj
+.Rproj.user/
+
 # renv (if you use it)
-renv/library/
-renv/staging/
+renv/
+renv.lock
 .Rprofile
+
+# knitr and R markdown
+*_cache/
+*.utf8.md
+*.knit.md
 
 # --- OS / Editors ---
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
 Thumbs.db
-*.swp
+
+# Windows
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+
+# IDE files
 .idea/
 .vscode/
+*.swp
+*.swo
+*.swn
 
-# --- Outputs / Large files (keep source, ignore generated) ---
-/figures/
+# --- Outputs / Generated files ---
 *.html
 *.docx
+*.pptx
+
+# Keep the reports directory PDFs
+!reports/*.pdf
+
+# Generated figures (keep source visualizations in outputs/)
+/figures/
 *.mkv
 
-# --- Data (choose what to ignore) ---
-# If you want to keep data out of git, uncomment one of these:
+# --- Data (uncomment to ignore large data files) ---
 # *.csv
+# *.xlsx
+# *.xls
 # *.tsv
-# data/
+# *.rds
+# *.rda
 # data/raw/
 # data/interim/
 # data/processed/
+
+# --- Python (if applicable) ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+.venv
+
+# --- Logs ---
+*.log
+logs/
+
+# --- Temporary files ---
+*.tmp
+*.temp
+temp/
+tmp/
+
+# --- Security ---
+.env
+.env.local
+*.key
+*.pem
+credentials.R
+config.R
